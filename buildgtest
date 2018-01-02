@@ -1,0 +1,21 @@
+#!/bin/bash
+
+rm -rf gtest
+
+mkdir gtest
+mkdir gtest/lib
+mkdir gtest/include
+
+cd googletest/googletest/make
+make clean
+make -j4
+
+cp gtest_main.a ../../../gtest/lib/.
+cd ../../..
+cp -r googletest/googletest/include/* gtest/include/.
+
+
+
+
+
+

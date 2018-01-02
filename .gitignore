@@ -7,6 +7,7 @@ workspace/
 externals/
 package/
 app/external/imgui/
+gtest/
 
 appspace/*.ini
 appspace/*.jpg
